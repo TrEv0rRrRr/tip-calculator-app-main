@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Valentino Solis">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <figure class="container__figure">
+    <img src="./images/logo.svg" alt="Splitter logo.svg">
+  </figure>
+  <div class="container">
+
+    <header class="container__header">
+
+      <div class="container__header__input-bill header__div">
+        <div class="header__div-msg-cont">
+          <label class="header__div-label" for="Bill">Bill</label>
+          <p class="header__div-p error-msg" id="error-msg-bill"></p>
+        </div>
+        <input class="header__div-input" step="0.01" type="number" id="Bill" placeholder="0">
+      </div>
+
+      <div class="container__header__buttons-percentage header__div">
+        <p class="header__div-p">Select Tip %</p>
+        <div class="header__div-div-buttons">
+          <button class="header__div-div-button" id="5">5%</button>
+          <button class="header__div-div-button" id="10">10%</button>
+          <button class="header__div-div-button" id="15">15%</button>
+          <button class="header__div-div-button" id="25">25%</button>
+          <button class="header__div-div-button" id="50">50%</button>
+          <input class="header__div-div-input" type="number" id="custom" placeholder="Custom">
+        </div>
+      </div>
+
+      <div class="container__header__input-numofpeople header__div">
+        <div class="header__div-msg-cont">
+          <label class="header__div-label" for="NumberOfPeople">Number of People</label>
+          <p class="header__div-p error-msg" id="error-msg-nop"></p>
+        </div>
+        <input class="header__div-input" type="number" id="NumberOfPeople" placeholder="0">
+      </div>
+
+    </header>
+
+    <main class="container__main">
+
+      <div class="container__main-div">
+        <p class="container__main-div-p-text">Tip Amount <span class="p__span">/ person</span></p>
+        <p class="container__main-div-p-amount" id="amountTipPerson">$0.00</p>
+      </div>
+
+      <div class="container__main-div">
+        <p class="container__main-div-p-text">Total <span class="p__span">/ person</span></p>
+        <p class="container__main-div-p-amount" id="amountTotalPerson">$0.00</p>
+      </div>
+      <button class="container__main-div-button" disabled id="buttonReset">RESET</button>
+
+    </main>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

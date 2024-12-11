@@ -1,0 +1,125 @@
+.container__header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+}
+
+.header__div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 8px;
+  color: var(--Grayish-cyan);
+}
+
+.header__div-msg-cont {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+}
+
+.header__div-input {
+  width: 100%;
+  padding: 5px;
+  background-color: var(--Very-light-grayish-cyan);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+}
+
+.header__div-input::placeholder {
+  color: #9ebbbd;
+}
+
+.error-msg {
+  color: var(--Color-error);
+  display: none;
+}
+
+#Bill {
+  background-image: url("/images/icon-dollar.svg");
+}
+
+#NumberOfPeople {
+  background-image: url("/images/icon-person.svg");
+}
+
+.header__div-div-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 5px;
+}
+
+input {
+  text-align: end;
+}
+
+input,
+button,
+.header__div-div-input::placeholder {
+  font-size: 24px;
+  font-family: "Space Mono", sans-serif;
+  color: var(--Very-dark-cyan);
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px;
+  background-color: var(--Very-dark-cyan);
+  color: #fff;
+  cursor: pointer;
+}
+
+.header__div-div-button,
+.header__div-div-input {
+  padding: 8px;
+  min-width: 8rem;
+}
+
+.header__div-div-input::placeholder {
+  text-align: center;
+  opacity: 0.7;
+}
+
+button:hover {
+  background-color: #a0e8e0;
+  color: var(--Very-dark-cyan);
+}
+
+.active {
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+}
+
+input:focus,
+.valid {
+  outline: 2px solid var(--Strong-cyan);
+}
+
+.invalid {
+  outline: 2px solid var(--Color-error);
+}
+
+@media screen and (max-width: 1062px) {
+  .container__header {
+    gap: 10px;
+  }
+
+  .header__div-div-buttons {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 5px;
+  }
+
+  .header__div-div-button,
+  .header__div-div-input {
+    padding: 8px;
+    min-width: 100%;
+    max-width: 5rem;
+    justify-self: center;
+  }
+}
