@@ -37,11 +37,11 @@
 }
 
 #Bill {
-  background-image: url("./images/icon-dollar.svg");
+  background-image: url("../images/icon-dollar.svg");
 }
 
 #NumberOfPeople {
-  background-image: url("./images/icon-person.svg");
+  background-image: url("../images/icon-person.svg");
 }
 
 .header__div-div-buttons {

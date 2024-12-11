@@ -138,4 +138,5 @@ buttonReset.addEventListener("click", () => {
   });
 });
 
+updateResetButton();
 tipCalculator();
